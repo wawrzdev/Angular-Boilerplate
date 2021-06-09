@@ -1,0 +1,30 @@
+
+<div>
+    <mat-toolbar color="primary" class="mat-elevation-z3">
+        <button mat-button class='toggle-button-navbar mat-icon-button'>
+            <mat-icon>menu</mat-icon>
+        </button>
+        <div app-name>
+            <a mat-button routerLink=''><h3>{{title | uppercase}}</h3></a>
+        </div>
+        <mat-nav-list>
+            <a mat-list-item routerLink="/sample" routerLinkActive='active'>Sample Feature Component</a>
+        </mat-nav-list>
+        <div class="filler"></div>
+        <ng-container *ngIf="(userRoles$ | async) || (userRoles$ | async)">
+            <div user-org>{{userRoles$ | async}}</div>
+            <span>-</span>
+            <div user-name>{{userCommonName$ | async}}</div>
+        </ng-container>
+        <button mat-icon-button (click)="toggleTheme()" matTooltip="Switch to {{theme}} Theme">
+            <mat-icon>
+                brightness_6
+            </mat-icon>
+        </button>
+        <button mat-icon-button class="toggle-button-navbar mat-icon-button">
+            <mat-icon>
+                notifications
+            </mat-icon>
+        </button>
+    </mat-toolbar>
+</div>

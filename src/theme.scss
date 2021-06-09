@@ -1,0 +1,102 @@
+@import '~@angular/material/theming';
+@include mat-core;
+
+
+$md-primary: (
+    50 : #e7e9ea,
+    100 : #c2c8cc,
+    200 : #99a4aa,
+    300 : #707f87,
+    400 : #52636e,
+    500 : #334854,
+    600 : #2e414d,
+    700 : #273843,
+    800 : #20303a,
+    900 : #142129,
+    A100 : #6cc2ff,
+    A200 : #39adff,
+    A400 : #0698ff,
+    A700 : #008aeb,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$md-accent: (
+    50 : #fef5e7,
+    100 : #fde6c2,
+    200 : #fcd599,
+    300 : #fbc470,
+    400 : #fab752,
+    500 : #f9aa33,
+    600 : #f8a32e,
+    700 : #f79927,
+    800 : #f69020,
+    900 : #f57f14,
+    A100 : #ffffff,
+    A200 : #fff7f1,
+    A400 : #ffdabe,
+    A700 : #ffcca4,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue.
+
+$angular-primary: mat-palette($md-primary);
+$angular-accent: mat-palette($md-accent);
+$angular-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+
+
+$angular-light-theme: mat-light-theme(
+  (
+    color: (
+      primary: $angular-primary,
+      accent: $angular-accent,
+      warn: $angular-warn,
+    ),
+  )
+);
+
+$angular-dark-theme: mat-dark-theme(
+  (
+    color: (
+      primary: $angular-primary,
+      accent: $angular-accent,
+      warn: $angular-warn,
+    ),
+  )
+);
+
+

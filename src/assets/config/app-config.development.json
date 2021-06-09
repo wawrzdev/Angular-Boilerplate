@@ -1,0 +1,15 @@
+{
+    "logLevel": "Verbose",
+    "appName": "Sample",
+    "appVersion": "0.1",
+    "apiUrl": "",
+    "apiVersion": "v1",
+    "authConfig": {
+        "enabled": "false",
+        "issuer": "",
+        "clientId": "",
+        "allowedUrls": "",
+        "showDebugInformation": "",
+        "resource": ""
+    }
+}

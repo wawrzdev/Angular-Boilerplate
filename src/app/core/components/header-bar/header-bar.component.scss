@@ -1,0 +1,23 @@
+@import "~@angular/material/theming";
+@import './../../../../theme.scss';
+
+.filler {
+    flex: 1 1 auto;
+}
+
+mat-nav-list {
+    padding: 0;
+    .mat-list-item {
+      display: inline-block;
+      height: auto;
+      width: auto;
+    }
+}
+
+.mat-nav-list a.active {
+    background: mat-color($angular-accent);
+}
+
+mat-toolbar > * {
+    margin-left: 10px;
+}
